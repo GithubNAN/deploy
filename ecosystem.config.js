@@ -27,11 +27,11 @@ module.exports = {
   deploy : {
     production : {
       user : 'deploy',
-      host : '212.83.163.1',
+      host : '139.59.124.141',
       ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
+      repo : 'https://590bcfd864e5e901e0a75e37befda91c3c18804c@github.com/GithubNAN/deploy.git',
       path : '~/node-example',
-      'post-deploy' : 'nvm install && npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'nvm install && npm install && /home/deploy/.nvm/versions/node/v7.9.0/bin/pm2 reload ecosystem.config.js --env production'
     },
   }
 };
